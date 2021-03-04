@@ -18,7 +18,6 @@ app = FastAPI()
 
 @app.get("/status")
 def status():
-    # return {"some": test()}
     return JSONResponse(get_status())
 
 
